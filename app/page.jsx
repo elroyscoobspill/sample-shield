@@ -93,7 +93,7 @@ export default function Home() {
         <div className="grid">
           <section className="card">
             <label>1. Upload beat / track</label>
-            <input type="file" accept="audio/*" onChange={e => setTrack(e.target.files?.[0] || null)} />
+            <input type="file" accept=".mp3,.wav,.m4a,audio/mpeg,audio/wav,audio/mp4,audio/x-m4a" onChange={e => setTrack(e.target.files?.[0] || null)} />
             <div className="hint">Best: MP3, WAV, M4A. Use short test files first.</div>
 
             <label>2. Source notes / where it came from</label>
